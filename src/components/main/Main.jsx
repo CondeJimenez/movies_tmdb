@@ -1,9 +1,7 @@
-
+import { Outlet } from "react-router-dom"
 
 const Main = () => {
-  return (
-    <div>Main</div>
-  )
-}
+  return <Outlet/>
+};
 
-export default Main
+export default Main;
