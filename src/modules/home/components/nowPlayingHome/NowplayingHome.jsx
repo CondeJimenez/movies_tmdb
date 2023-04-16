@@ -1,5 +1,5 @@
 import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service";
-import HomePresentacional from "../../HomePresentacional";
+import MoviesPresentacional from "../../../Movies/MoviesPresentacional";
 
 const NowplayingHome = ({ filter, page = 1 }) => {
   const { data: results, isLoading } = useGetTypeMovieQuery(filter, page);  
@@ -9,8 +9,8 @@ const NowplayingHome = ({ filter, page = 1 }) => {
   ) : (
     results?.results
       .slice(0, 10)
-      .map((pelicula) => (
-        <HomePresentacional pelicula={pelicula} key={pelicula.id} />
+      .map((peliculas) => (
+        <MoviesPresentacional peliculas={peliculas} key={peliculas.id} />
       )) 
   );
 };

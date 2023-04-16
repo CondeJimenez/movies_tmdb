@@ -1,5 +1,5 @@
 import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service";
-import HomePresentacional from "../../HomePresentacional";
+import MoviesPresentacional from "../../../Movies/MoviesPresentacional";
 
 const ToRatedHome = ({ filter, page = 1 }) => {
   const { data: results = [], isLoading } = useGetTypeMovieQuery(filter, page);
@@ -8,8 +8,8 @@ const ToRatedHome = ({ filter, page = 1 }) => {
   ) : (
     results.results
       .slice(0, 12)
-      .map((pelicula) => (
-        <HomePresentacional pelicula={pelicula} key={pelicula.id} />
+      .map((peliculas) => (
+        <MoviesPresentacional peliculas={peliculas} key={peliculas.id} />
       ))
   );
 };

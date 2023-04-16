@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/now_playin",
+        path: "/now_playing",
         element: <NowPlaying/>
       },
       {
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
         element:<Popular/>
       },
       {
-        path:'top_rated',
+        path:'/top_rated',
         element:<TopRated/>
       },
       {
-        path:'upcoming',
+        path:'/upcoming',
         element:<Upcoming/>
       }
     ],

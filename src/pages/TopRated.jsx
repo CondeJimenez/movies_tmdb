@@ -1,9 +1,7 @@
-import React from 'react'
+import TopRatedContainer from "../modules/topRated/TopRatedContainer";
 
 const TopRated = () => {
-  return (
-    <div>TopRated</div>
-  )
-}
+  return <TopRatedContainer/>;
+};
 
-export default TopRated
+export default TopRated;

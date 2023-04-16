@@ -1,6 +1,6 @@
 import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service";
 import randomMovie from "../../../../utils/randomMovie.js";
-import HomePresentacional from "../../HomePresentacional";
+import MoviesPresentacional from "../../../Movies/MoviesPresentacional";
 
 const PopularHomeContainer = ({ filter, page = 1 }) => {
   const { data: results = [], isLoading } = useGetTypeMovieQuery(filter, page);
@@ -12,8 +12,8 @@ const PopularHomeContainer = ({ filter, page = 1 }) => {
     newResults.results
       .sort(randomMovie)
       .slice(0, 5)
-      .map((pelicula) => (
-        <HomePresentacional pelicula={pelicula} key={pelicula.id} />
+      .map((peliculas) => (
+        <MoviesPresentacional peliculas={peliculas} key={peliculas.id} />
       ))
   );
 };
