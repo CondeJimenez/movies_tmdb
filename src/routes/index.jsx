@@ -4,7 +4,8 @@ import NowPlaying from "../pages/Nowplaying";
 import Popular from '../pages/Popular'
 import TopRated from "../pages/TopRated";
 import Upcoming from "../pages/Upcoming";
-import Home from "../modules/home/Home";
+import Home from "../pages/Home";
+
 
 const router = createBrowserRouter([
   {

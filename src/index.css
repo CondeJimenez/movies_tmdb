@@ -3,6 +3,12 @@
   padding:0;
   box-sizing: border-box;
 }
+h1{
+  font-size: 5rem;
+}
+p{
+  font-size: 3rem;
+}
 html{
   font-size: 62.5%;
 }
