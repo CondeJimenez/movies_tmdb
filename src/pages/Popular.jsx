@@ -1,10 +1,12 @@
+import PopularContainer from "../modules/popular/PopularContainer"
 
 
 const Popular = () => {
   return (
-    <div>Popular
-      <PopularContainer/>
-    </div>
+    
+   <PopularContainer/>
+  
+
   )
 }
 

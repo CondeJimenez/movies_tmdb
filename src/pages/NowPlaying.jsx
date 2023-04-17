@@ -1,8 +1,9 @@
+import NowPlayingContainer from "../modules/nowPlaying/NowPlayingContainer"
 
 
 const NowPlaying = () => {
   return (
-    <div>NowPlaying</div>
+   <NowPlayingContainer/>
   )
 }
 

@@ -5,7 +5,7 @@ const TopRatedContainer = () => {
   const { data: results = [], isLoading } = useGetTypeMovieQuery(
     "top_rated",
     "1"
-  );
+  ); 
 
   return isLoading ? (
     <h2>Cargando...</h2>

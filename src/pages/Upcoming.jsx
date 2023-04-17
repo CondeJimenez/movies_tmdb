@@ -1,9 +1,9 @@
+import UpComingContainer from "../modules/upcoming/UpComingContainer"
 
 
 const Upcoming = () => {
-  return (
-    <div>Upcoming</div>
-  )
+  return <UpComingContainer/>
+  
 }
 
 export default Upcoming
