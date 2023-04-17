@@ -1,23 +1,24 @@
-import React from "react";
 import PopularHomeContainer from "./components/popularHome/PopularHomeContainer";
 import NowplayingHome from "./components/nowPlayingHome/NowplayingHome";
 import SlideHomeContainer from "./components/slideHome/SlideHomeContainer";
 import ToRatedHome from "./components/toRatedHome/ToRatedHome";
 import UpComingHome from "./components/upcomingHome/UpcomingHome";
+import { Link } from "react-router-dom";
 
 const HomeContainer = () => {
   return (
     <>
-
       {/* slideHome no ponerle un Link */}
       <section>
         <h1>Aqui ira el Slide de Home</h1>
         <SlideHomeContainer filter={"top_rated"} />
       </section>
-      
+
       <section>
-        {/* Link al h1 to y te rediriga a la ruta a la seccion de peliculas */}        
-        <h1>Aqui iran las Populares Popular</h1>
+        {/* Link al h1 to y te rediriga a la ruta a la seccion de peliculas */}
+        <Link to={'/popular'}>
+          <h1>Aqui iran las Populares Popular</h1>
+        </Link>
         <PopularHomeContainer filter={"popular"} />
       </section>
 

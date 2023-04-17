@@ -1,6 +1,6 @@
 const SlideHomePresentacional = ({peliculas}) => {
   return (
-    <h1>peliculas.id</h1>
+    <h1>{peliculas.title}</h1>
   )
 }
 
