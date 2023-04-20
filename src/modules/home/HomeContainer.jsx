@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const HomeContainer = () => {
   return (
-    <>
+    <main>
       {/* slideHome no ponerle un Link */}
       <section>
         <h1>Aqui ira el Slide de Home</h1>
@@ -15,7 +15,6 @@ const HomeContainer = () => {
       </section>
 
       <section>
-        {/* Link al h1 to y te rediriga a la ruta a la seccion de peliculas */}
         <Link to={'/popular'}>
           <h1>Aqui iran las Populares Popular</h1>
         </Link>
@@ -26,15 +25,18 @@ const HomeContainer = () => {
         <h1>Aqui iran las Now Playing</h1>
         <NowplayingHome filter={"now_playing"} />
       </section>
+
       <section>
         <h1>Aqui va TopRateHome</h1>
         <ToRatedHome filter={"top_rated"} />
       </section>
+
       <section>
         <h1>Aqui va UpcomingHome</h1>
         <UpComingHome filter={"upcoming"} />
       </section>
-    </>
+
+    </main>
   );
 };
 

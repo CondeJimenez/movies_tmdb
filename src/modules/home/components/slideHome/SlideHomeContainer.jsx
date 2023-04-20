@@ -7,9 +7,6 @@ const SlideHomeContainer = ({ filter, page = 1 }) => {
   let moviesHome;
   const newResults = structuredClone(results);
   
-  // prefijo de las img /Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg
-  
-
   if (!isLoading) {
     moviesHome = newResults.results
       .sort(randomMovie)

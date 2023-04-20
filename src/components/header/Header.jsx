@@ -1,7 +1,10 @@
+import styles from "../components.modules.css";
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header className={styles.header}>
+      <h1>Header</h1>
+    </header>
   )
 }
 
