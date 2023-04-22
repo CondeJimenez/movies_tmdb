@@ -13,4 +13,6 @@ export const tmdbApi = createApi({
   }),
 });
 
+// se llaman template string y es para poder usar variables en un string  y lleva back(acentos graves)
+
 export const { useGetTypeMovieQuery } = tmdbApi;

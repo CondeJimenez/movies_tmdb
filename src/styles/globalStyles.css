@@ -1,25 +1,33 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  font-size: 62.5%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-  width: 100vw;
-  height: 100vh;
-  background-color: #35363a;
-  color: white;
-} 
-#root{
-  display: flex;
-  flex-direction: column;
+
+html {
+    font-size: 62.5%;
+    color: white;
+    /* background-color: #1f2b35; */
 }
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(35deg, hsl(263deg 30% 31%) 0%, hsl(261deg 30% 30%) 7%, hsl(260deg 29% 30%) 14%, hsl(260deg 29% 29%) 21%, hsl(255deg 27% 28%) 29%, hsl(248deg 25% 26%) 36%, hsl(241deg 22% 25%) 43%, hsl(235deg 21% 22%) 50%, hsl(230deg 22% 21%) 57%, hsl(226deg 23% 20%) 64%, hsl(222deg 23% 19%) 71%, hsl(218deg 24% 18%) 79%, hsl(214deg 25% 18%) 86%, hsl(210deg 26% 17%) 93%, hsl(207deg 26% 16%) 100%);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 /* Esto se va a quitar */
-img{
-  width: 250px;
+
+img {
+    width: 150px;
 }
 
-h1{
-  font-size: 4rem;
+h1 {
+    font-size: 2rem;
 }

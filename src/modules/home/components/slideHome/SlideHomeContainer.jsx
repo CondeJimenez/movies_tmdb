@@ -7,16 +7,18 @@ const SlideHomeContainer = ({ filter, page = 1 }) => {
   let moviesHome;
   const newResults = structuredClone(results);
   
+  
   if (!isLoading) {
-    moviesHome = newResults.results
+    moviesHome = newResults?.results
       .sort(randomMovie)
-      .filter((peliculas) => peliculas.popularity > 70);
+      .slice(0,1)
+      .filter((peliculas) => peliculas.popularity > 70 );
   }
-
+  console.log(moviesHome);
   return isLoading ? (
     <h2>Cargando...</h2>
   ) : (
-    moviesHome.map((peliculas) => (
+    moviesHome?.map((peliculas) => (
       <SlideHomePresentacional peliculas={peliculas} key={peliculas.id} />
     ))
   );

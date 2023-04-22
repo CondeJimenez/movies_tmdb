@@ -1,3 +1,41 @@
-.home{
-    
+.slideHome {
+    grid-area: slideHome;
+    background-color: #F4BFBF;
 }
+
+.asideHomeTopRated {
+    grid-area: asideHomeTopRated;
+    background-color: #FFD9C0;
+}
+
+.popularHome {
+    grid-area: popularHome;
+    background-color: #8CC0DE;
+}
+
+.nowPlayingHome {
+    grid-area: nowPlayingHome;
+    background-color: #FFF5FD;
+}
+
+.asideHomeTopRated {
+    grid-area: asideHomeTopRated;
+    background-color: #FF96AD;
+}
+
+.upComingHome {
+    grid-area: upComingHome;
+    background-color: #A5AEFF;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: "slideHome slideHome" "popularHome asideHomeTopRated" "nowPlayingHome asideHomeTopRated" "upComingHome upComingHome";
+}
+
+
+/* asideHome
+populaHome
+nowPlayingHome
+ToRatedHome
+pComungHome */

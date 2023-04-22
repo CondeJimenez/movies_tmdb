@@ -1,0 +1,9 @@
+.header{
+    height: 10vh;
+}
+.main{
+    flex-grow: 1;
+}
+.footer{
+    height: 10vh;
+}
