@@ -16,7 +16,7 @@ const SlideHomeContainer = () => {
   return isLoading ? (
     <h2>Cargando...</h2>
   ) : (
-    moviesHome?.map((peliculas) => (
+    moviesHome?.slice(0,3).map((peliculas) => (
       <SlideHomePresentacional peliculas={peliculas} key={peliculas.id} />
     ))
   );

@@ -11,7 +11,6 @@ const PopularHomeContainer = () => {
   ) : (
     newResults.results
       .sort(randomMovie)
-      .slice(0, 5)
       .map((peliculas) => (
         <MoviesPresentacional peliculas={peliculas} key={peliculas.id} />
       ))

@@ -1,0 +1,60 @@
+.slideHome {
+    grid-area: slideHome;
+    /* background-color: #F4BFBF; */
+}
+
+.asideHomeTopRated {
+    grid-area: asideHomeTopRated;
+    /* background-color: #FFD9C0; */
+}
+
+.popularHome {
+    grid-area: popularHome;
+    /* background-color: #8CC0DE; */
+}
+
+.nowPlayingHome {
+    grid-area: nowPlayingHome;
+    /* background-color: #FFF5FD; */
+}
+
+.asideHomeTopRated {
+    grid-area: asideHomeTopRated;
+    background-color: #FF96AD;
+}
+
+.upComingHome {
+    grid-area: upComingHome;
+    /* background-color: #A5AEFF; */
+}
+
+.gridContainer {
+    grid-template-columns: 80vw 20vw;
+    display: grid;
+    grid-template-areas: "slideHome slideHome" "popularHome asideHomeTopRated" "nowPlayingHome asideHomeTopRated" "upComingHome upComingHome";
+    gap: 3rem;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* ---------------------- */
+
+
+/* Estos estilos son para cada seccion del home */
+
+.slide {
+    display: flex;
+    flex-direction: row;
+}
+
+.popularAndUpcoming {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2;
+}

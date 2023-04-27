@@ -8,7 +8,7 @@ const UpComingHome = () => {
   return isLoading ? (
    <h2>Cargando</h2>
   ):(
-    results?.results?.map(peliculas  => (
+    results?.results?.slice(0,5).map(peliculas  => (
       <MoviesPresentacional peliculas={peliculas} key={peliculas.id}/>
     ))
 

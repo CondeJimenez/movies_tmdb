@@ -8,7 +8,6 @@ const NowplayingHome = () => {
     <h2>Cargando...</h2>
   ) : (
     results?.results
-      .slice(0, 10)
       .map((peliculas) => (
         <MoviesPresentacional peliculas={peliculas} key={peliculas.id} />
       )) 
