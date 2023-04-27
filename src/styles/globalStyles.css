@@ -7,12 +7,23 @@
 html {
     font-size: 62.5%;
     color: white;
-    /* background-color: #1f2b35; */
+}
+
+.bg {
+    background: linear-gradient(35deg, hsl(263deg 30% 31%) 0%, hsl(261deg 30% 30%) 7%, hsl(260deg 29% 30%) 14%, hsl(260deg 29% 29%) 21%, hsl(255deg 27% 28%) 29%, hsl(248deg 25% 26%) 36%, hsl(241deg 22% 25%) 43%, hsl(235deg 21% 22%) 50%, hsl(230deg 22% 21%) 57%, hsl(226deg 23% 20%) 64%, hsl(222deg 23% 19%) 71%, hsl(218deg 24% 18%) 79%, hsl(214deg 25% 18%) 86%, hsl(210deg 26% 17%) 93%, hsl(207deg 26% 16%) 100%);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+
+    /* Esta opción no es recomendable porque en mobiles deja un espacio en blanco en la parte de abajo al hacer scrooll
+    background-attachment: fixed; */
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(35deg, hsl(263deg 30% 31%) 0%, hsl(261deg 30% 30%) 7%, hsl(260deg 29% 30%) 14%, hsl(260deg 29% 29%) 21%, hsl(255deg 27% 28%) 29%, hsl(248deg 25% 26%) 36%, hsl(241deg 22% 25%) 43%, hsl(235deg 21% 22%) 50%, hsl(230deg 22% 21%) 57%, hsl(226deg 23% 20%) 64%, hsl(222deg 23% 19%) 71%, hsl(218deg 24% 18%) 79%, hsl(214deg 25% 18%) 86%, hsl(210deg 26% 17%) 93%, hsl(207deg 26% 16%) 100%);
+    /* min-width: 100vw; */
+    
 }
 
 #root {
@@ -30,4 +41,8 @@ img {
 
 h1 {
     font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
 }

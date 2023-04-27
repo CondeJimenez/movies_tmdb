@@ -2,7 +2,7 @@ import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service";
 import MoviesPresentacional from "../../../Movies/MoviesPresentacional";
 
 const ToRatedHome = ({ filter, page = 1 }) => {
-  const { data: results = [], isLoading } = useGetTypeMovieQuery(filter, page);
+  const { data: results = [], isLoading } = useGetTypeMovieQuery('top_rated', '1');
   return isLoading ? (
     <h2>cargando...</h2>
   ) : (

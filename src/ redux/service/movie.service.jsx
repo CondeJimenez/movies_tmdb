@@ -8,7 +8,7 @@ export const tmdbApi = createApi({
   endpoints: (builder) => ({
     getTypeMovie: builder.query({
       query: (filter, page) =>
-        `${filter}?api_key=${KEY}&language=en-US&page=${page}&region=MX`,
+        `${filter}?api_key=${KEY}&language=en-US&page=${page}`,
     }),
   }),
 });

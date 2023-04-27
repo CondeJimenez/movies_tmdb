@@ -3,7 +3,7 @@ import MoviesPresentacional from "../Movies/MoviesPresentacional"
 
 
 const UpComingContainer = () => {
-    const {data: results=[], isLoading} = useGetTypeMovieQuery('up_coming','1')
+    const {data: results=[], isLoading} = useGetTypeMovieQuery('upcoming','1')
   return isLoading ? (
 <h2>Cargando....</h2>
   ):(

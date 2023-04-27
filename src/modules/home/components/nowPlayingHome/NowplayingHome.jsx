@@ -1,8 +1,8 @@
 import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service";
 import MoviesPresentacional from "../../../Movies/MoviesPresentacional";
 
-const NowplayingHome = ({ filter, page = 1 }) => {
-  const { data: results, isLoading } = useGetTypeMovieQuery(filter, page);  
+const NowplayingHome = () => {
+  const { data: results, isLoading } = useGetTypeMovieQuery('now_playing', '1');  
 
   return isLoading ? (
     <h2>Cargando...</h2>

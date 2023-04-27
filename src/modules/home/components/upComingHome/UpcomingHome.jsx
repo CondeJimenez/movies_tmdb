@@ -1,12 +1,14 @@
 import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service"
 import MoviesPresentacional from "../../../Movies/MoviesPresentacional"
 
-const UpComingHome = ({filter,page=1}) => {
-  const {data: results=[], isLoading} = useGetTypeMovieQuery(filter, page)
+const UpComingHome = () => {
+  const {data:results=[], isLoading} = useGetTypeMovieQuery('upcoming', '1')
+
+ 
   return isLoading ? (
    <h2>Cargando</h2>
   ):(
-    results.results.slice(0,20).map(peliculas  => (
+    results?.results?.map(peliculas  => (
       <MoviesPresentacional peliculas={peliculas} key={peliculas.id}/>
     ))
 

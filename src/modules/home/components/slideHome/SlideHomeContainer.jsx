@@ -2,19 +2,17 @@ import { useGetTypeMovieQuery } from "../../../../ redux/service/movie.service";
 import randomMovie from "../../../../utils/randomMovie";
 import SlideHomePresentacional from "./SlideHomePresentacional";
 
-const SlideHomeContainer = ({ filter, page = 1 }) => {
-  const { data: results = [], isLoading } = useGetTypeMovieQuery(filter, page);
+const SlideHomeContainer = () => {
+  const { data: results = [], isLoading } = useGetTypeMovieQuery('top_rated', '1');
   let moviesHome;
   const newResults = structuredClone(results);
   
   
   if (!isLoading) {
     moviesHome = newResults?.results
-      .sort(randomMovie)
-      .slice(0,1)
-      .filter((peliculas) => peliculas.popularity > 70 );
-  }
-  console.log(moviesHome);
+      ?.sort(randomMovie)
+      ?.filter((peliculas) => peliculas.popularity > 70 );
+  } 
   return isLoading ? (
     <h2>Cargando...</h2>
   ) : (
