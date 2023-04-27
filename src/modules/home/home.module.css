@@ -2,59 +2,59 @@
     grid-area: slideHome;
     /* background-color: #F4BFBF; */
 }
-
 .asideHomeTopRated {
     grid-area: asideHomeTopRated;
     /* background-color: #FFD9C0; */
 }
-
-.popularHome {
-    grid-area: popularHome;
-    /* background-color: #8CC0DE; */
+.popularAndNowPlayingHome {
+    grid-area: popularAndNowPlayingHome;
+    display: flex;
+    flex-direction: column;    
 }
-
-.nowPlayingHome {
-    grid-area: nowPlayingHome;
-    /* background-color: #FFF5FD; */
-}
-
 .asideHomeTopRated {
     grid-area: asideHomeTopRated;
-    background-color: #FF96AD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cfcfcf4a;
+    border-radius: 1rem;
 }
-
 .upComingHome {
     grid-area: upComingHome;
     /* background-color: #A5AEFF; */
 }
-
 .gridContainer {
-    grid-template-columns: 80vw 20vw;
+    grid-template-columns: 1.5fr auto;
+    grid-template-rows: auto auto auto;
     display: grid;
-    grid-template-areas: "slideHome slideHome" "popularHome asideHomeTopRated" "nowPlayingHome asideHomeTopRated" "upComingHome upComingHome";
+    grid-template-areas: 
+    "slideHome slideHome" 
+    "popularAndNowPlayingHome asideHomeTopRated" 
+    "upComingHome upComingHome";
+    padding: 5rem;
+    justify-content: center;
     gap: 3rem;
 }
 
 .link {
     text-decoration: none;
-    color: blue;
+    color: white
 }
-
-
-/* ---------------------- */
-
-
-/* Estos estilos son para cada seccion del home */
+.title{
+    font-size: 5rem;
+    margin: 1.5rem 0;
+}
 
 .slide {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
+    overflow-x: scroll;
 }
 
-.popularAndUpcoming {
-    width: 90%;
-    height: auto;
+.popuAndComing {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 2;
+    gap: 5rem;
 }

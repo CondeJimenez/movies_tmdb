@@ -8,40 +8,52 @@ import styles from "./home.module.css";
 
 const HomeContainer = () => {
   return (
-    // Aqui ira el grid
-
     <section className={styles.gridContainer}>
-      <section className={styles.slide}>
-        <h1>Aqui ira el Slide de Home</h1>
+      <section className={styles.slideHome}>
         <section className={styles.slide}>
           <SlideHomeContainer />
         </section>
       </section>
 
-      <section className={styles.popularHome}>
-        <Link to={"/popular"} className={styles.link}>
-          <h1>Aqui iran las Populares Popular</h1>
-        </Link>
-        <section className={styles.popularAndUpcoming}>
-          <PopularHomeContainer />
+      <section className={styles.popularAndNowPlayingHome}>
+        <section>
+          <h1 className={styles.title}>
+            <Link to={"/popular"} className={styles.link}>
+              Movies Most Popular
+            </Link>
+          </h1>
+          <section className={styles.popuAndComing}>
+            <PopularHomeContainer />
+          </section>
         </section>
-      </section>
 
-      <section className={styles.nowPlayingHome}>
-        <h1>Aqui iran las Now Playing</h1>
-        <section className={styles.popularAndUpcoming}>
-        <NowplayingHome />
+        <section>
+          <h1 className={styles.title}>
+            <Link to={"/now_playing"} className={styles.link}>
+              Movies Now Playing
+            </Link>
+          </h1>
+          <section className={styles.popuAndComing}>
+            <NowplayingHome />
+          </section>
         </section>
-        
       </section>
 
       <section className={styles.asideHomeTopRated}>
-        <h1>Aqui va TopRateHome</h1>
+        <h1 className={styles.title}>
+          <Link to={"/top_rated"} className={styles.link}>
+            Aqui va TopRateHome
+          </Link>
+        </h1>
         <ToRatedHome />
       </section>
 
       <section className={styles.upComingHome}>
-        <h1>Aqui va UpcomingHome</h1>
+        <h1 className={styles.title}>
+          <Link to={"/upcoming"} className={styles.link}>
+            Aqui va UpcomingHome
+          </Link>
+        </h1>
         <section className={styles.slide}>
           <UpComingHome />
         </section>
