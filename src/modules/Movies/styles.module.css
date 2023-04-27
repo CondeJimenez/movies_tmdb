@@ -1,0 +1,19 @@
+.presentacional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    margin: 2rem 0;
+}
+.img{
+    width: 250px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    font-size: 3rem;
+}

@@ -7,7 +7,7 @@ const ToRatedHome = ({ filter, page = 1 }) => {
     <h2>cargando...</h2>
   ) : (
     results.results
-      .slice(0, 12)
+      .slice(0,7)
       .map((peliculas) => (
         <MoviesPresentacional peliculas={peliculas} key={peliculas.id} />
       ))
