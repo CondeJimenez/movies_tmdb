@@ -1,8 +1,12 @@
 import UpComingContainer from "../modules/upcoming/UpComingContainer"
-
+import styles from './styles.module.css'
 
 const Upcoming = () => {
-  return <UpComingContainer/>
+  return (
+    <section className={styles.sectionTypeMovie}>
+      <UpComingContainer/>
+    </section>
+  )
   
 }
 

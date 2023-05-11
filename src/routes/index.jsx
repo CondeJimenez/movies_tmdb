@@ -5,6 +5,7 @@ import Popular from '../pages/Popular'
 import TopRated from "../pages/TopRated";
 import Upcoming from "../pages/Upcoming";
 import Home from "../pages/Home";
+import MovieContainerParams from "../modules/Movies/MovieContainerParams";
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,9 @@ const router = createBrowserRouter([
       {
         path:'/upcoming',
         element:<Upcoming/>
+      },{
+        path:'/detail/:id',
+        element: <MovieContainerParams/>
       }
     ],
   },
