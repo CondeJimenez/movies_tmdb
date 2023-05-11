@@ -10,10 +10,14 @@ export const tmdbApi = createApi({
       query: (filter, page) =>
         `${filter}?api_key=${KEY}&language=en-US&page=${page}`,
     }),
+    getMovieDetail: builder.query({
+      query:(id)=>
+      `${id}?api_key=${KEY}`
+    })
   }),
   //hay que crear otro servicio para el detalle de la pelicula
 });
 
 // se llaman template string y es para poder usar variables en un string  y lleva back(acentos graves)
 
-export const { useGetTypeMovieQuery } = tmdbApi;
+export const { useGetTypeMovieQuery, useGetMovieDetailQuery } = tmdbApi;

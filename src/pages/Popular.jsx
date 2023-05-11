@@ -1,13 +1,12 @@
-import PopularContainer from "../modules/popular/PopularContainer"
-
+import PopularContainer from "../modules/popular/PopularContainer";
+import styles from './styles.module.css'
 
 const Popular = () => {
   return (
-    
-   <PopularContainer/>
-  
+    <section className={styles.sectionTypeMovie}>
+      <PopularContainer />
+    </section>
+  );
+};
 
-  )
-}
-
-export default Popular
+export default Popular;

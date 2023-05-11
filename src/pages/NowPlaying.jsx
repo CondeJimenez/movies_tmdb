@@ -1,10 +1,12 @@
-import NowPlayingContainer from "../modules/nowPlaying/NowPlayingContainer"
-
+import NowPlayingContainer from "../modules/nowPlaying/NowPlayingContainer";
+import styles from './styles.module.css'
 
 const NowPlaying = () => {
   return (
-   <NowPlayingContainer/>
-  )
-}
+    <section className={styles.sectionTypeMovie}>
+      <NowPlayingContainer />
+    </section>
+  );
+};
 
-export default NowPlaying
+export default NowPlaying;

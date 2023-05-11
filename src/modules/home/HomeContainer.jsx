@@ -9,7 +9,6 @@ import styles from "./home.module.css";
 const HomeContainer = () => {
   return (
     <section className={styles.gridContainer}>
-
       <section className={styles.slideHome}>
         <section className={styles.slide}>
           <SlideHomeContainer />
@@ -21,7 +20,7 @@ const HomeContainer = () => {
           <h1 className={styles.title}>
             <Link to={"/popular"} className={styles.link}>
               Movies Most Popular
-            </Link>
+            </Link> 
           </h1>
           <section className={styles.popuAndComing}>
             <PopularHomeContainer />

@@ -2,48 +2,53 @@
     grid-template-columns: 2fr auto;
     grid-template-rows: auto auto auto;
     display: grid;
-    grid-template-areas: 
-    "slideHome slideHome" 
-    "popularAndNowPlayingHome asideHomeTopRated" 
-    "upComingHome upComingHome";
+    grid-template-areas: "slideHome slideHome" "popularAndNowPlayingHome asideHomeTopRated" "upComingHome upComingHome";
     padding: 5rem;
     justify-content: center;
     gap: 3rem;
 }
-.backgroundPrueba{
+
+.backgroundPrueba {
     background-color: brown;
 }
+
 .slideHome {
     grid-area: slideHome;
     /* background-color: #F4BFBF; */
 }
+
 .asideHomeTopRated {
     grid-area: asideHomeTopRated;
     /* background-color: #FFD9C0; */
 }
+
 .popularAndNowPlayingHome {
     grid-area: popularAndNowPlayingHome;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    justify-content: center;
 }
+
 .asideHomeTopRated {
     grid-area: asideHomeTopRated;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    /* position: absolute; */
+    text-align: center;
+    background-color: #a5aeff50;
 }
+
 .upComingHome {
     grid-area: upComingHome;
-    /* background-color: #A5AEFF; */
 }
 
 .link {
     text-decoration: none;
     color: white
 }
-.title{
+
+.title {
     font-size: 5rem;
     margin: 1.5rem 0;
 }
@@ -60,4 +65,5 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
+    text-align: center;
 }
