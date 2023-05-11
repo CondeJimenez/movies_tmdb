@@ -3,17 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 150px;
     height: auto;
     margin: 2rem 0;
 }
 .img{
-    width: 250px;
+    width: 150px;
 }
 .link{
     text-decoration: none;
     color: white;
 }
 .title{
-    font-size: 3rem;
+    font-size: 2rem;
 }

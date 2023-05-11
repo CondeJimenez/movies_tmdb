@@ -3,6 +3,7 @@ import styles from "./styles.module.css"
 
 const BASE_IMG = import.meta.env.VITE_API_URL_IMG;
 const MoviesPresentacional = ({ peliculas }) => {
+  console.log(peliculas);
   
   return (
     <section className={styles.presentacional}>
